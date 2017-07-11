@@ -1,0 +1,75 @@
+.display-1 {
+  font-family: "Arial";
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+h1{
+  font-family: "Arial";
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.display-2{
+  font-family: "Arial";
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.display-3{
+  font-family: "Arial";
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.display-4{
+  font-family: "Arial";
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+@mixin body-1{
+  font-family: "Arial";
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.caption{
+  font-family: "Arial";
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+a:link{
+  @include body-1;
+  color:  $color-secondary;
+}
+
+a:hover{
+  @include body-1;
+  color:  $color-secondary-darker;
+}
+
+.alert{
+  @include body-1;
+  color:  $color-primary-dark;
+}
+
+input::placeholder{
+  @include body-1;
+  color: $grey-base;
+}
+
+
+
+// ::-webkit-input-placeholder{
+//   @include body-1;
+//   color: $grey-base;
+// }
+
+// ::-moz-placeholder{
+//   @include body-1;
+//   color: $grey-base;
+// }
+
+
